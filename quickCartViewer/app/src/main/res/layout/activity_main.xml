@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 상단 버튼 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F3C4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="169dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#3069ff"
+            android:onClick="onClickDownload"
+            android:text="장바구니 불러오기"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계산하기" />
+    </LinearLayout>
+
+    <!-- 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="현재 장바구니 목록입니다."
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- 총 금액 표시 -->
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#E0E0E0"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="총 금액: 0원"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
