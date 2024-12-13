@@ -1,0 +1,2 @@
+서비스 URL :  https://jerryzoo.pythonanywhere.com/
+소스코드 git 주소 : https://github.com/JerryG0228/QuickCart
