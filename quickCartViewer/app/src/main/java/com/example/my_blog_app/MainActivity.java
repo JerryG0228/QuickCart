@@ -33,8 +33,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
-    static String site_url = "http://10.0.2.2:8000"; // local
-    //static String site_url = "https://jerryzoo.pythonanywhere.com/"; // pythonanywhere
+    //static String site_url = "http://10.0.2.2:8000"; // local
+    static String site_url = "https://jerryzoo.pythonanywhere.com/"; // pythonanywhere
     JSONObject post_json;
     String imageUrl = null;
     CloadImage taskDownload;

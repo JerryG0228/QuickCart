@@ -7,8 +7,8 @@ from datetime import datetime
 
 class ChangeDetection:
     result_prev = []
-    HOST = 'http://127.0.0.1:8000'  # local
-    # HOST = 'https://jerryzoo.pythonanywhere.com'  # pythonanywhere
+    #HOST = 'http://127.0.0.1:8000'  # local
+    HOST = 'https://jerryzoo.pythonanywhere.com'  # pythonanywhere
     username = 'admin'
     password = 'admin'
     token = ''
